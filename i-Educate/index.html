@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        #home{
+    background-color: white;
+    color: black;
+    font-size: 25px;
+  }
+  
+  .dark-mode {
+    background-color: black;
+    color: white;
+  }
+        /* Center the loader */
+        #loader {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          z-index: 1;
+          width: 120px;
+          height: 120px;
+          margin: -76px 0 0 -76px;
+          border: 16px solid #f3f3f3;
+          border-radius: 50%;
+          border-top: 16px solid #3498db;
+          -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+        }
+        
+        @-webkit-keyframes spin {
+          0% { -webkit-transform: rotate(0deg); }
+          100% { -webkit-transform: rotate(360deg); }
+        }
+        
+        @keyframes spin {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
+        
+        /* Add animation to "page content" */
+        .animate-bottom {
+          position: relative;
+          -webkit-animation-name: animatebottom;
+          -webkit-animation-duration: 1s;
+          animation-name: animatebottom;
+          animation-duration: 1s
+        }
+        
+        @-webkit-keyframes animatebottom {
+          from { bottom:-100px; opacity:0 } 
+          to { bottom:0px; opacity:1 }
+        }
+        
+        @keyframes animatebottom { 
+          from{ bottom:-100px; opacity:0 } 
+          to{ bottom:0; opacity:1 }
+        }
+        
+        #myDiv {
+          display: none;
+          text-align: center;
+        }
+        </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iEducate - Transforming Online Education</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="myFunction()" style="margin:0;"  id="home">
+    <div id="loader"></div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+    <nav class="navbar background" >
+        <ul class="nav-list">
+            <div class="logo">
+                <img src="https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c08089930.png?imwidth=270&imdensity=1" alt="logo">
+            </div>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <button onclick="MyFunctionT" class="background" style="color: white;">Change Theme</button>
+        </ul>
+        <div class="right-nav">
+            <input class="form-input-1" type="text" name="search" id="search" placeholder="Search Here.......">
+            <button class="btn btn-sm">Search</button>
+        </div>
+</nav>
+
+<section class="background first-section">
+    <div class="box-main">
+        <div class="first-half">
+            <p class="text-big">The Future Of Education Is Here</p>
+            <p class="text-small">In This World Of 7 Billion People We Need To Educate All Of Them.This Is The Future Of An Educated World And We Are To Say That The Future Of Education Is Here </p>
+            <div class="buttons">
+                <button class="btn">Subscribe</button>
+                <button class="btn">Watch Video</button>
+            </div>
+        </div>
+        <div class="second-half">
+            <img src="https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c08089930.png?imwidth=270&imdensity=1" alt="laptop image">
+        </div>
+    </div>
+</section>
+
+<section class="section" id="about">
+    <div class="paras">
+    <p class="section-tag text-big" >The End Of Your Search Is Here!</p>
+    <p class="section-subtag text-small">Education in Pakistan is overseen by the Federal Ministry of Education and the provincial governments, whereas the federal government mostly assists in curriculum development, accreditation and the financing of research and development. Article 25-A of the Constitution of Pakistan obligates the state to provide free and compulsory quality education to children of the age group 5 to 16 years. "The State shall provide free and compulsory education to all children of the age of five to sixteen years in such a manner as may be determined by law"</p>
+</div>
+    <div class="thumbnail">
+        <img class="img-fluid" src="https://media.istockphoto.com/id/1308634001/photo/modern-library-with-laptops-on-the-table-and-books-on-the-bookshelves.jpg?s=612x612&w=0&k=20&c=92IINp5jHYQmF0Nrv1aLXYfj7LQuleTyWl72ztyxB9U=" alt="laptop-image">
+    </div>
+</section>
+<hr>
+<section class="section section-left" id="services">
+    <div class="paras">
+    <p class="section-tag text-big" >Transforming Education In Pakistan</p>
+    <p class="section-subtag text-small">The education system in Pakistan is generally divided into six levels: preschool (for the age from 3 to 5 years), primary (years one to five), middle (years six to eight), high (years nine and ten, leading to the Secondary School Certificate or SSC), intermediate (years eleven and twelve, leading to a Higher Secondary School Certificate or HSSC), and university programs leading to undergraduate and graduate degrees.The Higher Education Commission established in 2002 is responsible for all universities and degree awarding institutes.It was established in 2002 with Atta-ur-Rahman as its Founding Chairman.
+        The literacy rate ranges from 82% in Islamabad to 23% in the Torghar District.Literacy rates vary by gender and region. In tribal areas female literacy is 9.5%,while Azad Kashmir has a literacy rate of 74%.Pakistan produces about 445,000 university graduates and 25,000–30,000 computer science graduates per year.Despite these statistics, Pakistan still has low literacy rate.And Pakistan also has the second largest out of school population (22.8 million children)after Nigeria.</p>
+</div>
+    <div class="thumbnail">
+        <img class="img-fluid" src="https://media.istockphoto.com/id/1251629816/photo/the-perfect-setting-to-complete-work.jpg?b=1&s=170667a&w=0&k=20&c=e8mSv3z6PhT18EUmzgtdMCbQecYzhHoqu_ts8tFdN6c=" alt="laptop-image">
+    </div>
+</section>
+<hr>
+<section class="section">
+    <div class="paras">
+    <p class="section-tag text-big">Let's Grow Together With Better Education</p>
+    <p class="section-subtag text-small">Quality education specifically entails issues such as appropriate skills development, gender parity, provision of relevant school infrastructure, equipment, educational materials and resources, scholarships or teaching force.Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all.When people are able to get quality education they can break from the cycle of poverty. Education therefore helps to reduce inequalities and to reach gender equality. It also empowers peo- ple everywhere to live more healthy and sus- tainable lives.The literacy rate ranges from 82% in Islamabad to 23% in the Torghar District. Literacy rates vary by gender and region. In tribal areas female literacy is 9.5%, while Azad Kashmir has a literacy rate of 74%. Pakistan produces about 445,000 university graduates and 25,000–30,000 computer science graduates per year.</p>
+</div>
+    <div class="thumbnail">
+        <img class="img-fluid" src="https://media.istockphoto.com/id/985024622/photo/e-learning-concept.jpg?s=612x612&w=0&k=20&c=cwRMTOAdK-d0BkmERIvuDDFfR5i_bpEb1vyt6WD3URA=" alt="laptop-image">
+    </div>
+</section>
+<hr>
+
+<section class="contact" id="contact">
+    <h1 class="text-center">Contact Us</h1>
+    <div class="form">
+        <input class="form-input" type="text" name="name" id="name" placeholder="Enter Your Name">
+        <input class="form-input" type="text" name="Phone" id="Phone" placeholder="Enter Your Phone Number">
+        <input class="form-input" type="text" name="Email" id="Email" placeholder="Enter Your Email">
+        <textarea class="form-input" name="text" id="text" cols="30" rows="10" placeholder="Ellaborate Your Concern"></textarea>
+        <button class="btn btn-sm btn-dark">Submit</button>
+    </div>
+</section>
+<footer class="background">
+    <p class="text-footer">copyrigth &copy; 2027 www.iEducate.com - All rights reserved</p>
+    
+</footer>
+</div>
+
+<script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+function MyFunctionT() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+    
+   
+</body>
+</html>
